@@ -1,48 +1,52 @@
+"use client"
 import { Button } from '@nextui-org/react';
 import React from 'react';
-// // import { Carousel } from 'react-responsive-carousel';
-// // import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import sliderOne from "../../assets"
 const Hero = () => {
-    var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+    const settings = {
+        infinite: true,
+        speed: 500,
+        fade: true,
+        autoplay: true,
+        pauseOnHover: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
     return (
       
-<div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+<div className="relative flex flex-col  items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-8 xl:max-w-6xl">
 
 
-    <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-      
-              <img class="h-full w-full object-cover" src="https://i.ibb.co/0sd88wX/Whats-App-Image-2023-04-10-at-21-05-35.jpg" alt="Winding mountain road" />
-            {/* <img class="h-full w-full object-cover" src="https://i.ibb.co/Vjb38rg/jhunjhuni-1-1.jpg" alt="Winding mountain road" /> */}
-       
-           
-        
+    <div className="w-full h-64 lg:w-1/2 lg:h-auto">
+    <Slider {...settings}>
+         <img className="h-full w-full object-cover" src="https://i.ibb.co/9H12jxJ/Neutral-Aesthetic-Modern-Living-Room-Interior-Wall-Art-Poster-Frame-Mockup-Instagram-Post.png" alt="Winding mountain road" />
+         <img className="h-full w-full object-cover" src="https://i.ibb.co/ZSv4GPx/slider.png" alt="Winding mountain road" /> 
+    </Slider>
+            
        
     </div>
 
 
     <div
-        class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+        className="max-w-lg bg-[#E6E2D7] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[#E4DED2] md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
        
-        <div class="flex flex-col p-12 md:px-16">
-            <h2 class="text-2xl font-medium uppercase text-slate-800 lg:text-4xl">Our Products</h2>
-            <p class="mt-4">
+        <div className="flex flex-col p-12 md:px-16">
+        <div
+    className="text-4xl w-[50%] cursor-pointer relative before:absolute before:bg-[#C7BAAC] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500">
+    <span className="relative text-[#888888]">Home Items</span>
+</div>
+            <p className="mt-4 text-[#333333]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.
             </p>
          
-            <div class="mt-8">
-                 <Button color="primary" variant="bordered">
-        Bordered
+            <div className="mt-8">
+                 <Button  className='rounded-none border-y-1 border-[#A17D60] bg-transparent text-[#A17D60] font-semibold uppercase'>
+        Explore
       </Button> 
             </div>
         </div>
