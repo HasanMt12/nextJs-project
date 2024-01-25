@@ -1,9 +1,4 @@
 import React from 'react';
-import SecondPhoto from "../../assets/samplePhotoThree.png"
-import ThirdPhoto from "../../assets/samplePhotoOne.png"
-import OfferPhoto from "../../assets/offer.png"
-import GiftCardPhoto from "../../assets/giftCard.png"
-import Image from 'next/image';
 
 import {  Grape_Nuts } from "next/font/google";
 import { MoveRight } from 'lucide-react';
@@ -18,7 +13,7 @@ const Gallery = () => {
 
             <a href="#"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                <Image src={OfferPhoto}  width="full" height="full" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                <img src="https://i.ibb.co/wQpsW1G/offer.png"  alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -29,7 +24,7 @@ const Gallery = () => {
           
             <a href="#"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                <Image src={SecondPhoto}  width="full" height="full" alt="Photo by Magicle" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                <img src="https://i.ibb.co/vC9DMpK/sample-Photo-Three.png"   alt="Photo by Magicle" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
                     className="pointer-events-none absolute inset-0  bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -42,7 +37,7 @@ const Gallery = () => {
            
             <a href="#"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                <Image src={ThirdPhoto}  width="full" height="full" alt="Photo by Martin Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                <img src="https://i.ibb.co/NCzJSny/sample-Photo-One.png"   alt="Photo by Martin Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -55,7 +50,7 @@ const Gallery = () => {
       
             <a href="#"
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 ">
-                <Image src={GiftCardPhoto}  width="full" height="full" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                <img src="https://i.ibb.co/Dfsqv47/giftCard.png"   alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
