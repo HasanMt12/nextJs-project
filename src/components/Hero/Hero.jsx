@@ -1,10 +1,12 @@
 "use client"
+import {  Grape_Nuts } from "next/font/google";
+const grape_Nuts = Grape_Nuts({ subsets: ["latin"], weight:"400" });
 import { Button } from '@nextui-org/react';
 import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import sliderOne from "../../assets"
+
 const Hero = () => {
     const settings = {
         infinite: true,
@@ -35,13 +37,12 @@ const Hero = () => {
        
         <div className="flex flex-col p-12 md:px-16">
         <div
-    className="text-4xl w-[50%] cursor-pointer relative before:absolute before:bg-[#C7BAAC] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500">
-    <span className="relative text-[#888888]">Home Items</span>
+    className="text-4xl md:w-[50%] w-[70%] cursor-pointer relative before:absolute before:bg-[#A17D60] before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500">
+    <span className={`${grape_Nuts.className} relative text-[#2C2C2C]`}>Home Items</span>
 </div>
             <p className="mt-4 text-[#333333]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                dolore magna aliqua. 
             </p>
          
             <div className="mt-8">

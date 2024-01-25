@@ -2,7 +2,7 @@ import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org
 
 const CategorCard = () => {
     return (
-        <div className="flex gap-2">
+        <div className="flex md:flex-row flex-col lg:gap-4 md:gap-3 gap-2">
             <Card isFooterBlurred className="w-full h-[300px] bg-[#F5F5F5] col-span-12 shadow-sm sm:col-span-7 rounded-sm">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
         

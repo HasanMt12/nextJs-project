@@ -2,6 +2,7 @@ import Card from "@/components/Card/Card";
 import CategorCard from "@/components/Categories/CategorCard";
 import Hero from "@/components/Hero/Hero";
 import Gallery from "@/components/Sections/Gallery";
+import Rules from "@/components/rules/Rules";
 import { Sparkle } from "lucide-react";
 import {  Grape_Nuts } from "next/font/google";
 const grape_Nuts = Grape_Nuts({ subsets: ["latin"], weight:"400" });
@@ -34,6 +35,7 @@ export default function Home() {
         </div>
    <Card></Card>
    </div>
+   <Rules></Rules>
    <Gallery></Gallery>
    </div>
   );

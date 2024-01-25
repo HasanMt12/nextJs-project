@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from 'react-scroll';
 import {  Grape_Nuts } from "next/font/google";
-
+const grape_Nuts = Grape_Nuts({ subsets: ["latin"], weight:"400" });
 import { RiShoppingCartLine } from "react-icons/ri";
 import { FaUserCircle } from "react-icons/fa";
 import { RiMenu3Line } from "react-icons/ri";
@@ -11,7 +11,7 @@ import { IoMdClose } from "react-icons/io";
 import MenuOverlay from "./Menu";
 import './globals.css'
 import { Avatar, Badge } from "@nextui-org/react";
-const grape_Nuts = Grape_Nuts({ subsets: ["latin"], weight:"400" });
+
 const navLinks = [
   {
     title: "Home",
