@@ -10,7 +10,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-    
+      colors: {
+        primary: {
+          DEFAULT: "#A17D60",
+          foreground: "#000000",
+        },
+        focus: "#A17D60",
+        },
     },
   },
     plugins: [nextui()]

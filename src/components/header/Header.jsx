@@ -11,6 +11,7 @@ import { IoMdClose } from "react-icons/io";
 import MenuOverlay from "./Menu";
 import './globals.css'
 import { Avatar, Badge } from "@nextui-org/react";
+import Link from "next/link";
 
 const navLinks = [
   {
@@ -32,7 +33,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed  mx-auto  md:bg-transparent top-0 left-0 right-0 z-20  bg-clip-padding backdrop-filter md:backdrop-filter-none  backdrop-blur-lg bg-opacity-10  px-0 ">
+    <nav className="sticky  mx-auto  md:bg-transparent top-0 left-0 right-0 z-20  bg-clip-padding backdrop-filter md:backdrop-filter-none  backdrop-blur-lg bg-opacity-10  px-0 ">
       <div className="flex  lg:py-1 flex-wrap items-center justify-between  mx-auto md:px-6 lg:px-8 px-4 py-1   bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 shadow-lg uppercase">
         <h2 className={`${grape_Nuts.className} font-bold`}><span className="text-[#A17D60] text-3xl">Home</span> Decore</h2>
         <div className="mobile-menu block md:hidden">
@@ -56,17 +57,19 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-10 mt-0 ">
             {navLinks.map((link, index) => (
             
-               <li key={index} > 
-              {/* Use ScrollLink instead of NavLink */}
-              <ScrollLink
-                to={link.path.substring(1)} // Remove the '#' from the path
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="cursor-pointer lg:text-md nav font-semibold md:text-sm text-lg text-[#333333] hover:text-[#A17D60] rounded md:p-0 tracking-wide"
-              >
-                {link.title}
-              </ScrollLink>
+               <li key={index}
+              className="cursor-pointer lg:text-md nav font-semibold md:text-sm text-lg text-[#333333] hover:text-[#A17D60] rounded md:p-0 tracking-wide"
+               > 
+          <Link
+           href={link.path} 
+          >
+           {link.title} 
+          </Link>
+               
+                
+              
+                
+             
             </li>
             ))}
           </ul>

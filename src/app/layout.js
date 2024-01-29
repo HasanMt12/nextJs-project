@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
       <body className={'bg-[#EBECF0]'}>
         <Providers>
         <Navbar></Navbar>
-        <div className="h-10"></div>
           {children} 
           <Footer></Footer>
         </Providers>
